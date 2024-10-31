@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Email Validation</title>
+    <!--FontAwesome Icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- <label for="email-id">Email Id</label><br /> -->
+      <label for="email-id">Phone Number</label><br />
+      <!-- on < 속성 : 자바스크립트를 바로 적용 ex)oninput -->
+      <input type="email" id="email-id" oninput="checker()" />
+      <div id="icon">
+        <!-- innerHTML로 태그를 입력함, 글자는 textContent -->
+      </div>
+      <!-- <p id="error-msg">유효한 이메일을 입력하세요</p> -->
+      <p id="error-msg">번호를 제대로 입력해주세요!</p>
+    </div>
+    <!--Script-->
+    <script src="app.js"></script>
+  </body>
+</html>
